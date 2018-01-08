@@ -1,0 +1,17 @@
+D:\Projects\GuessMelody\GuessMelody\bin\Debug\GuessMelody.exe.config
+D:\Projects\GuessMelody\GuessMelody\bin\Debug\GuessMelody.exe
+D:\Projects\GuessMelody\GuessMelody\bin\Debug\GuessMelody.pdb
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csprojResolveAssemblyReference.cache
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fMain.resources
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.Properties.Resources.resources
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.GenerateResource.Cache
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.CoreCompileInputs.cache
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.exe
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.pdb
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fSettings.resources
+D:\Projects\GuessMelody\GuessMelody\bin\Debug\Interop.WMPLib.dll
+D:\Projects\GuessMelody\GuessMelody\bin\Debug\AxInterop.WMPLib.dll
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\Interop.WMPLib.dll
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\AxInterop.WMPLib.dll
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.ResolveComReference.cache
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fGame.resources
