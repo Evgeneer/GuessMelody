@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.SuspendLayout();
             // 
             // btnPlay
@@ -81,16 +81,16 @@
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Guess Melody";
+            this.Load += new System.EventHandler(this.fMain_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnExit;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
 
