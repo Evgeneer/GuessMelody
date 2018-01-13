@@ -15,3 +15,4 @@ D:\Projects\GuessMelody\GuessMelody\obj\Debug\Interop.WMPLib.dll
 D:\Projects\GuessMelody\GuessMelody\obj\Debug\AxInterop.WMPLib.dll
 D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.csproj.ResolveComReference.cache
 D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fGame.resources
+D:\Projects\GuessMelody\GuessMelody\obj\Debug\GuessMelody.fMessage.resources

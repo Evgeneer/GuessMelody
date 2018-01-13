@@ -36,11 +36,15 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.gbSettings = new System.Windows.Forms.GroupBox();
-            this.lblGameDuration = new System.Windows.Forms.Label();
-            this.lblMusicDuration = new System.Windows.Forms.Label();
-            this.cbGameDuration = new System.Windows.Forms.ComboBox();
-            this.cbMusicDuration = new System.Windows.Forms.ComboBox();
             this.cbRandomStart = new System.Windows.Forms.CheckBox();
+            this.cbMusicDuration = new System.Windows.Forms.ComboBox();
+            this.cbGameDuration = new System.Windows.Forms.ComboBox();
+            this.lblMusicDuration = new System.Windows.Forms.Label();
+            this.lblGameDuration = new System.Windows.Forms.Label();
+            this.lblPlayer1 = new System.Windows.Forms.Label();
+            this.lblPlayer2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.gbSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,6 +107,10 @@
             // 
             // gbSettings
             // 
+            this.gbSettings.Controls.Add(this.comboBox2);
+            this.gbSettings.Controls.Add(this.comboBox1);
+            this.gbSettings.Controls.Add(this.lblPlayer2);
+            this.gbSettings.Controls.Add(this.lblPlayer1);
             this.gbSettings.Controls.Add(this.cbRandomStart);
             this.gbSettings.Controls.Add(this.cbMusicDuration);
             this.gbSettings.Controls.Add(this.cbGameDuration);
@@ -115,38 +123,15 @@
             this.gbSettings.TabStop = false;
             this.gbSettings.Text = "Settings";
             // 
-            // lblGameDuration
+            // cbRandomStart
             // 
-            this.lblGameDuration.AutoSize = true;
-            this.lblGameDuration.Location = new System.Drawing.Point(6, 36);
-            this.lblGameDuration.Name = "lblGameDuration";
-            this.lblGameDuration.Size = new System.Drawing.Size(76, 13);
-            this.lblGameDuration.TabIndex = 0;
-            this.lblGameDuration.Text = "Game duration";
-            // 
-            // lblMusicDuration
-            // 
-            this.lblMusicDuration.AutoSize = true;
-            this.lblMusicDuration.Location = new System.Drawing.Point(6, 74);
-            this.lblMusicDuration.Name = "lblMusicDuration";
-            this.lblMusicDuration.Size = new System.Drawing.Size(82, 13);
-            this.lblMusicDuration.TabIndex = 1;
-            this.lblMusicDuration.Text = "Time for answer";
-            // 
-            // cbGameDuration
-            // 
-            this.cbGameDuration.FormattingEnabled = true;
-            this.cbGameDuration.Items.AddRange(new object[] {
-            "30",
-            "45",
-            "60",
-            "90",
-            "120"});
-            this.cbGameDuration.Location = new System.Drawing.Point(101, 33);
-            this.cbGameDuration.Name = "cbGameDuration";
-            this.cbGameDuration.Size = new System.Drawing.Size(49, 21);
-            this.cbGameDuration.TabIndex = 2;
-            this.cbGameDuration.Text = "60";
+            this.cbRandomStart.AutoSize = true;
+            this.cbRandomStart.Location = new System.Drawing.Point(9, 115);
+            this.cbRandomStart.Name = "cbRandomStart";
+            this.cbRandomStart.Size = new System.Drawing.Size(194, 17);
+            this.cbRandomStart.TabIndex = 4;
+            this.cbRandomStart.Text = "Start from random place of the song";
+            this.cbRandomStart.UseVisualStyleBackColor = true;
             // 
             // cbMusicDuration
             // 
@@ -165,15 +150,74 @@
             this.cbMusicDuration.TabIndex = 3;
             this.cbMusicDuration.Text = "20";
             // 
-            // cbRandomStart
+            // cbGameDuration
             // 
-            this.cbRandomStart.AutoSize = true;
-            this.cbRandomStart.Location = new System.Drawing.Point(9, 115);
-            this.cbRandomStart.Name = "cbRandomStart";
-            this.cbRandomStart.Size = new System.Drawing.Size(194, 17);
-            this.cbRandomStart.TabIndex = 4;
-            this.cbRandomStart.Text = "Start from random place of the song";
-            this.cbRandomStart.UseVisualStyleBackColor = true;
+            this.cbGameDuration.FormattingEnabled = true;
+            this.cbGameDuration.Items.AddRange(new object[] {
+            "30",
+            "45",
+            "60",
+            "90",
+            "120"});
+            this.cbGameDuration.Location = new System.Drawing.Point(101, 33);
+            this.cbGameDuration.Name = "cbGameDuration";
+            this.cbGameDuration.Size = new System.Drawing.Size(49, 21);
+            this.cbGameDuration.TabIndex = 2;
+            this.cbGameDuration.Text = "60";
+            // 
+            // lblMusicDuration
+            // 
+            this.lblMusicDuration.AutoSize = true;
+            this.lblMusicDuration.Location = new System.Drawing.Point(6, 74);
+            this.lblMusicDuration.Name = "lblMusicDuration";
+            this.lblMusicDuration.Size = new System.Drawing.Size(82, 13);
+            this.lblMusicDuration.TabIndex = 1;
+            this.lblMusicDuration.Text = "Time for answer";
+            // 
+            // lblGameDuration
+            // 
+            this.lblGameDuration.AutoSize = true;
+            this.lblGameDuration.Location = new System.Drawing.Point(6, 36);
+            this.lblGameDuration.Name = "lblGameDuration";
+            this.lblGameDuration.Size = new System.Drawing.Size(76, 13);
+            this.lblGameDuration.TabIndex = 0;
+            this.lblGameDuration.Text = "Game duration";
+            // 
+            // lblPlayer1
+            // 
+            this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.Location = new System.Drawing.Point(225, 36);
+            this.lblPlayer1.Name = "lblPlayer1";
+            this.lblPlayer1.Size = new System.Drawing.Size(45, 13);
+            this.lblPlayer1.TabIndex = 5;
+            this.lblPlayer1.Text = "Player 1";
+            // 
+            // lblPlayer2
+            // 
+            this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.Location = new System.Drawing.Point(225, 71);
+            this.lblPlayer2.Name = "lblPlayer2";
+            this.lblPlayer2.Size = new System.Drawing.Size(45, 13);
+            this.lblPlayer2.TabIndex = 6;
+            this.lblPlayer2.Text = "Player 2";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(287, 32);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(52, 21);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.Text = "A";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(287, 66);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(52, 21);
+            this.comboBox2.TabIndex = 8;
+            this.comboBox2.Text = "L";
             // 
             // fSettings
             // 
@@ -214,5 +258,9 @@
         private System.Windows.Forms.Label lblMusicDuration;
         private System.Windows.Forms.Label lblGameDuration;
         private System.Windows.Forms.CheckBox cbRandomStart;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblPlayer2;
+        private System.Windows.Forms.Label lblPlayer1;
     }
 }
